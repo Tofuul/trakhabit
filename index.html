@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Habitudes">
+  <meta name="theme-color" content="#000000">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="icon" type="image/png" href="icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <title>Habitudes</title>
+</head>
+<body>
+  <header class="top">
+    <button class="round" data-act="settings" aria-label="Réglages">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+    </button>
+    <button class="round primary" data-act="add" aria-label="Ajouter une habitude">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+    </button>
+  </header>
+
+  <main id="view"></main>
+
+  <nav class="dock" aria-label="Affichage">
+    <button data-act="view" data-view="year" aria-label="Historique">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 9.5h4M10.5 9.5h3M16 9.5h4M4 14h4M10.5 14h3M16 14h4M4 18.5h4M10.5 18.5h3M16 18.5h4"/></svg>
+    </button>
+    <button data-act="view" data-view="week" aria-label="5 derniers jours">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6l1.7 1.7L8 4.5M3.5 12.5l1.7 1.7L8 11M11 6h9M11 12.5h9M11 19h9M4 19h.01"/></svg>
+    </button>
+    <button data-act="view" data-view="month" aria-label="Mois">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h6M14 5h6M4 10h6M14 10h6M4 15h6M14 15h6M4 20h6M14 20h6"/></svg>
+    </button>
+  </nav>
+
+  <div id="sheet" class="sheet" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
